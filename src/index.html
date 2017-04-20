@@ -13,9 +13,9 @@
 </head>
 
 <body ng-app="app" ng-strict-di>
-    <componente-padre2></componente-padre2>   
-    <hr>
-    <componente-padre></componente-padre>
+    
+    <view></view>   
+   
     
     <!-- angular -->
     <script src="vendor/angular.min.js"></script>
@@ -23,14 +23,17 @@
     <!-- our app -->
     <script src="app/app.js"></script>
 
-    <!-- servicios / factorías -->
-    <script src="app/services/demo-factory.js"></script>
-
+   
     <!-- componentes -->
-    <script src="app/components/componente-padre.js"></script>
+    <script src="app/components/commons/footer/footer.js"></script>
     
-    <script src="app/components/componente-padre2.js"></script>
-    <script src="app/components/componente-hijo.js"></script>
+    <script src="app/components/commons/header/header.js"></script>
+
+    <script src="app/components/viewmain/viewmain.js"></script>
+
+    <script src="app/components/viewmain/listanimals/listanimals.js"></script>
+
+    <script src="app/components/viewmain/listanimals/animal.js"></script>
 
 </body>
 
