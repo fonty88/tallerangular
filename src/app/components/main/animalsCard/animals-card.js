@@ -11,6 +11,11 @@
 
   function animalsCard() {
     var vm = this;
+
+   
+
+
+
   }
 
 })(angular);

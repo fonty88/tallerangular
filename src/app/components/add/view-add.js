@@ -13,8 +13,12 @@
     };
 
     vm.addAnimal = function() {
-       var newAnimal = {name: 'Otro bicho', img:'bicho.jpg'};
-       
+       var newAnimal = {
+         name: vm.animalname, 
+         img: vm.animalimg,
+        type: vm.combo
+       }
+
       animalsFactory.addAnimal(newAnimal);
     }
   }
