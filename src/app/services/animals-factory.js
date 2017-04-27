@@ -51,7 +51,7 @@
       var len = self.allAnimals.length;
       var id = parseInt(_id_);
 
-      if ( !id ) {
+      if ( !id && id!=0 ) {
         return false;
       }
 
