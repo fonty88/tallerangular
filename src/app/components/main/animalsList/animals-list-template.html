@@ -3,12 +3,12 @@
  <!-- Detalle del jugador -->
      <h3 ng-class="[viewMain.subtitulares, viewMain.subtitularesConFondo]">Nombre emai ava  </h3>
      
-  
+  {{animalsList.name}}
 
     <animals-card
     ng-repeat="item in animalsList.allAnimals" 
     item-animal="item"
-    ng-click="animalsList.goToDetail(item.id)"
+    ng-click="animalsList.goToDetail(item.name)"
     >
     </animals-card>
     

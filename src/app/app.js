@@ -40,7 +40,10 @@
 
         var game = {
       name:'game',
-      url: '/game',
+      url: '/game/:name',
+      params: {
+        name: { squash: true, value: null }
+},
       template: ' <animals-list></animals-list>'
     };
   

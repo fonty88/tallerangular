@@ -3,7 +3,7 @@
     ng-show="viewAdd.showMsg">RELLENA LOS CAMPOS!!!!</div>
     <p>
          <label for="animalName">
-            Introduce tu Nombre de Usuario
+            Nombre de Usuario:
         </label>
         <input 
         type="text" 
@@ -15,7 +15,7 @@
     </p>
     <p>
            <label for="animalImg">
-            Introduce una Direccion de e-mail
+            Direccion de E-mail:
         </label>
         <input 
         type="text" 
@@ -34,24 +34,24 @@
         ng-model="viewAdd.animalType"
         value="img1"
         ng-class="{ 'has-error': !viewAdd.animalType && viewAdd.formIsSend }"
-        >img1
+        ><img  ng-src="app/styles/imgs/avatar1.jpg">
             
              <input type="radio" 
         id="animalType" 
         ng-model="viewAdd.animalType"
         value="img2"
         ng-class="{ 'has-error': !viewAdd.animalType && viewAdd.formIsSend }"
-        >img2     
+        ><img  ng-src="app/styles/imgs/avatar2.jpg">     
      
              <input type="radio" 
         id="animalType" 
         ng-model="viewAdd.animalType"
         value="img3"
         ng-class="{ 'has-error': !viewAdd.animalType && viewAdd.formIsSend }"
-        >img3
+        ><img  ng-src="app/styles/imgs/avatar3.jpg">
     </p> 
     <p>
-        <button ng-click="viewAdd.addAnimal()">
+        <button ng-click="viewAdd.addAnimal(viewAdd.animalName)">
             Crear
         </button>
     </p>

@@ -8,13 +8,11 @@
     var self = module;
 
     module.allAnimals = [
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-
+      {"id": 0, "name": "Gat1", "img":"cards.jpg"},
+      {"id": 0, "name": "Gat2", "img":"cards.jpg"},
+      {"id": 0, "name": "Gat3", "img":"cards.jpg"},
+      {"id": 0, "name": "Gat4", "img":"cards.jpg"},
+     
     ]; 
 
    module.allUsers = [
@@ -24,9 +22,10 @@
     ]; 
 
 
-    module.getAllAnimals = function() {
+    module.getAllAnimals = function() {      
       return self.allAnimals; 
     }
+    
 
     module.getAllUsers = function() {
       return self.allUsers; 

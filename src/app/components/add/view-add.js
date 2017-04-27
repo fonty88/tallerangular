@@ -31,8 +31,11 @@
         }
 
       if ( !vm.showMsg ) {
-        animalsFactory.addUser(newAnimal);       
-        $state.go('game');
+        //animalsFactory.addUser(newAnimal);       
+       // $state.go('game', { name: name, img: img, type:type });
+        vm.goToMain = function(_name_) {
+      $state.go('game', {name: _name_});
+    };
   
       }
     }
