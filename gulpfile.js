@@ -30,20 +30,6 @@ gulp.task('browserSync', function() {
 });
 
 
-/* El task default es el que se ejecuta cuando
-no le pasamos ninguna a gulp   */
-gulp.task('default', function() {
-    console.log('Default');
-});
-
-/* Definimos un array con los tasks que deben ejecutarse concluida esta
-gulp.task('default', ['lint'], function() {
-  console.log('Executing gulp...');
-});
- */
-
-/*
 gulp.task('default', ['browserSync'], function() {
     console.log('Default');
 });
-*/

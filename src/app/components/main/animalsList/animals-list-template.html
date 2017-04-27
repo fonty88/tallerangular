@@ -1,12 +1,15 @@
 <article class="list-animals">
+    
+ <!-- Detalle del jugador -->
+     <h3 ng-class="[viewMain.subtitulares, viewMain.subtitularesConFondo]">Nombre emai ava  </h3>
+     
+  
+
     <animals-card
     ng-repeat="item in animalsList.allAnimals" 
     item-animal="item"
     ng-click="animalsList.goToDetail(item.id)"
     >
     </animals-card>
-    <div>
-        <button ng-click="animalsList.sortList('up')">Up</button> - 
-        <button ng-click="animalsList.sortList('down')">Down</button>
-    </div>
+    
 </article>

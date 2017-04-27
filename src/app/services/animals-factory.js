@@ -8,17 +8,35 @@
     var self = module;
 
     module.allAnimals = [
-      {"id": 0, "name": "Gatos", "img":"cats.jpg", "type": "mamiferos"},
-      {"id": 1, "name": "Camaleones", "img":"camaleones.jpg", "type": "mamiferos"},
-      {"id": 2, "name": "Perros", "img": "dogs.jpg", "type": "mamiferos"},
-      {"id": 3, "name": "Hipopótamos", "img": "hipo.jpg", "type": "aves"},
-      {"id": 4, "name": "Cigüeñas", "img": "ciguenas.jpg", "type": "aves"},
-      {"id": 5, "name": "Pulpos", "img": "pulpo.jpg", "type": "aves"}
+      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
+      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
+      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
+      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
+      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
+      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
+
     ]; 
+
+   module.allUsers = [
+      {"name": "User", "email":"user@user", "avatar":"img1.jpg"},
+      
+      
+    ]; 
+
 
     module.getAllAnimals = function() {
       return self.allAnimals; 
     }
+
+    module.getAllUsers = function() {
+      return self.allUsers; 
+    }
+
+        module.addUser = function(newAnimal) {
+      newAnimal.id = self.allUsers.length;
+      self.allUsers.push(newAnimal);
+    };
+
 
   /* Al principio allAnimals es false 
    module.allAnimals = false; */

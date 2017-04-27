@@ -19,19 +19,11 @@
       template: '<view-main></view-main>'
     };
 
-    var detail = {
-      name: 'detail',
-      url: '/detail/:idAnimal',
-      params: {
-        idAnimal: { squash: true, value: null }
-      },
-      template: '<view-detail></view-detail>'
-    };
-
+  
     var about = {
       name:'aboutUs',
       url: '/aboutUs',
-      template: '<h3>About Us: work in progress</h3>'
+      template: '<view-edit></view-edit>'
     };
 
     var add = {
@@ -45,13 +37,20 @@
       url: '/editAnimal',
       template: '<view-edit></view-edit>'
     };
+
+        var game = {
+      name:'game',
+      url: '/game',
+      template: ' <animals-list></animals-list>'
+    };
   
 
     $stateProvider.state(main);
-    $stateProvider.state(detail);
+   
     $stateProvider.state(about);
     $stateProvider.state(add);
     $stateProvider.state(edit);
+     $stateProvider.state(game);
 
     /* Definimos una ruta por defecto: */
     $urlRouterProvider.otherwise('/main');
