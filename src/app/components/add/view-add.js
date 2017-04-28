@@ -2,11 +2,11 @@
 
   angular.module('app').component('viewAdd', {
     templateUrl:  'app/components/add/view-add-template.html',
-    controller: ['$state','animalsFactory', viewAdd],
+    controller: ['$state','gameFactory', viewAdd],
     controllerAs: 'viewAdd'
   });
 
-  function viewAdd($state, animalsFactory) {
+  function viewAdd($state, gameFactory) {
     var vm = this;
 
     vm.$onInit = function() { 
@@ -31,7 +31,7 @@
         }
 
       if ( !vm.showMsg ) {
-        animalsFactory.addUser(newUser);       
+        gameFactory.addUser(newUser);       
         $state.go('game');
   
       }
