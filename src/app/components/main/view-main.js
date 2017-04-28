@@ -10,30 +10,14 @@
     var vm = this;
 
     vm.$onInit = function() {
-      vm.subtitulares = 'miClaseMaravillosa';
-      vm.subtitularesConFondo = 'miOtraClaseMaravillosa';
-      vm.foo = true;
-      vm.ukaLele = 'trololo';
+     
+    };   
+
+    vm.goToAdd = function() {
+      $state.go('addPlayer');
     };
 
-    vm.renders = {};
-
-    vm.renders.calculaClaseMaravillosa = function() {
-      if ( 1 === 1) {
-        return true;
-      }
-      return false;
-    };
-
-    vm.actions = {};
-
-    vm.actions.goToAdd = function() {
-      $state.go('addAnimal');
-    };
-
-    vm.actions.goToEdit = function() {
-      $state.go('editAnimal');
-    };
+  
   }
 
  

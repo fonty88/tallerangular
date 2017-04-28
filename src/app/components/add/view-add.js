@@ -14,24 +14,24 @@
       vm.formIsSend = false;     
     };
 
-    vm.addAnimal = function() {
-       var newAnimal = {
-         name: vm.animalName, 
-         img: vm.animalImg,
-         type: vm.animalType
+    vm.addUser = function() {
+       var newUser = {
+         name: vm.userName, 
+         email: vm.userEmail,
+         img: vm.userImg
         };
-        console.log(newAnimal);
+        console.log(newUser);
 
         vm.formIsSend = true;    
 
-        if ( !newAnimal.name || !newAnimal.img || !newAnimal.type ) {
+        if ( !newUser.name || !newUser.email || !newUser.img ) {
           vm.showMsg = true;
         } else {
            vm.showMsg = false;
         }
 
       if ( !vm.showMsg ) {
-        animalsFactory.addUser(newAnimal);       
+        animalsFactory.addUser(newUser);       
         $state.go('game');
   
       }

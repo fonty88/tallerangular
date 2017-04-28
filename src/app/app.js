@@ -13,43 +13,35 @@
    angular.module('app').config(['$stateProvider', '$urlRouterProvider',  appConfig]);
 
   function appConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+    
     var main = {
       name: 'main',
       url: '/main',
       template: '<view-main></view-main>'
     };
-
   
     var about = {
       name:'aboutUs',
       url: '/aboutUs',
-      template: '<view-edit></view-edit>'
+      template: '<view-about></view-about>'
     };
 
     var add = {
-      name:'addAnimal',
-      url: '/addAnimal',
+      name:'addPlayer',
+      url: '/addPlayer',
       template: '<view-add></view-add>'
-    };
-  
-    var edit = {
-      name:'editAnimal',
-      url: '/editAnimal',
-      template: '<view-edit></view-edit>'
-    };
+    };   
 
-        var game = {
+    var game = {
       name:'game',
       url: '/game',
       template: ' <animals-list></animals-list>'
     };
   
 
-    $stateProvider.state(main);
-   
+    $stateProvider.state(main);   
     $stateProvider.state(about);
-    $stateProvider.state(add);
-    $stateProvider.state(edit);
+    $stateProvider.state(add);   
      $stateProvider.state(game);
 
     /* Definimos una ruta por defecto: */

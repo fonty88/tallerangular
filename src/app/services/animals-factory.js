@@ -8,33 +8,39 @@
     var self = module;
 
     module.allAnimals = [
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
-      {"id": 0, "name": "Gatos", "img":"cards.jpg"},
+      {"id": 0, "name": "Gat1", "img":"cards.jpg"},
+      {"id": 1, "name": "Gat2", "img":"cards.jpg"},
+      {"id": 2, "name": "Gat3", "img":"cards.jpg"},
+      {"id": 3, "name": "Gat4", "img":"cards.jpg"},    
 
     ]; 
 
-   module.allUsers = [
-      {"name": "User", "email":"user@user", "avatar":"img1.jpg"},
+   module.user = {};
+     // {"id": 0, "name": "", "email":"", "avatar":""},    
       
-      
-    ]; 
+    
 
 
     module.getAllAnimals = function() {
+      
+      
+      for (let i = self.allAnimals.length; i; i--) {
+        let j = Math.floor(Math.random() * i );
+        [self.allAnimals[i - 1], self.allAnimals[j]] = [self.allAnimals[j], self.allAnimals[i - 1]];
+    }
       return self.allAnimals; 
     }
 
-    module.getAllUsers = function() {
-      return self.allUsers; 
+    module.getUser = function() {
+      return self.user; 
     }
 
-        module.addUser = function(newAnimal) {
-      newAnimal.id = self.allUsers.length;
-      self.allUsers.push(newAnimal);
+        module.addUser = function(newUser) {  
+          //newUser.id = 0;   
+          self.user.name = newUser.name;
+          self.user.email = newUser.email;
+          self.user.img = newUser.img;        
+       
     };
 
 

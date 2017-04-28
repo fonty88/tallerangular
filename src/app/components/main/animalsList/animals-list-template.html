@@ -1,9 +1,13 @@
 <article class="list-animals">
     
  <!-- Detalle del jugador -->
-     <h3 ng-class="[viewMain.subtitulares, viewMain.subtitularesConFondo]">Nombre emai ava  </h3>
+     <h3 >
+         {{animalsList.user.name}} 
+         {{animalsList.user.email}}
+        <img src=" {{animalsList.user.img}}">
+      </h3>
      
-  
+
 
     <animals-card
     ng-repeat="item in animalsList.allAnimals" 

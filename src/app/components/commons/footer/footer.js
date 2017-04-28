@@ -1,12 +1,12 @@
 (function(angular) {
 
-  angular.module('app').component('footerAnimals', {
-    templateUrl:  'app/components/commons/footer/footer-animals-template.html',
-    controller: ['$state', footerAnimals],
-    controllerAs: 'footerAnimals'
+  angular.module('app').component('footerGame', {
+    templateUrl:  'app/components/commons/footer/footer-game-template.html',
+    controller: ['$state', footerGame],
+    controllerAs: 'footerGame'
   });
 
-  function footerAnimals($state) {
+  function footerGame($state) {
     var vm = this;
 
     vm.goToAbout = function() {

@@ -2,56 +2,56 @@
     <div class="msg-error" 
     ng-show="viewAdd.showMsg">RELLENA LOS CAMPOS!!!!</div>
     <p>
-         <label for="animalName">
-            Introduce tu Nombre de Usuario
+         <label for="userName">
+           Nombre de Usuario:
         </label>
         <input 
         type="text" 
-        id="animalName" 
-        ng-model="viewAdd.animalName"
-        ng-class="{ 'has-error': !viewAdd.animalName && viewAdd.formIsSend }"
+        id="userName" 
+        ng-model="viewAdd.userName"
+        ng-class="{ 'has-error': !viewAdd.userName && viewAdd.formIsSend }"
         >
        
     </p>
     <p>
-           <label for="animalImg">
-            Introduce una Direccion de e-mail
+           <label for="userEmail">
+            Direccion de e-mail:
         </label>
         <input 
         type="text" 
-        id="animalImg" 
-        ng-model="viewAdd.animalImg"
-        ng-class="{ 'has-error': !viewAdd.animalImg && viewAdd.formIsSend }"
+        id="userEmail" 
+        ng-model="viewAdd.userEmail"
+        ng-class="{ 'has-error': !viewAdd.userEmail && viewAdd.formIsSend }"
         >
      
     </p>
     <p>
-          <label for="animalType">
-            Selecciona un Avatar
+          <label for="userImg">
+            Selecciona un Avatar:
         </label>
        <input type="radio" 
-        id="animalType" 
-        ng-model="viewAdd.animalType"
-        value="img1"
-        ng-class="{ 'has-error': !viewAdd.animalType && viewAdd.formIsSend }"
-        >img1
+        id="userImg" 
+        ng-model="viewAdd.userImg"
+        value="app/styles/imgs/avatar1.jpg"
+        ng-class="{ 'has-error': !viewAdd.userImg && viewAdd.formIsSend }"
+        ><img  ng-src="app/styles/imgs/avatar1.jpg">
             
              <input type="radio" 
-        id="animalType" 
-        ng-model="viewAdd.animalType"
-        value="img2"
-        ng-class="{ 'has-error': !viewAdd.animalType && viewAdd.formIsSend }"
-        >img2     
+        id="userImg" 
+        ng-model="viewAdd.userImg"
+        value="app/styles/imgs/avatar2.jpg"
+        ng-class="{ 'has-error': !viewAdd.userImg && viewAdd.formIsSend }"
+        ><img  ng-src="app/styles/imgs/avatar2.jpg">     
      
              <input type="radio" 
-        id="animalType" 
-        ng-model="viewAdd.animalType"
-        value="img3"
-        ng-class="{ 'has-error': !viewAdd.animalType && viewAdd.formIsSend }"
-        >img3
+        id="userImg" 
+        ng-model="viewAdd.userImg"
+        value="app/styles/imgs/avatar3.jpg"
+        ng-class="{ 'has-error': !viewAdd.userImg && viewAdd.formIsSend }"
+        ><img  ng-src="app/styles/imgs/avatar3.jpg">
     </p> 
     <p>
-        <button ng-click="viewAdd.addAnimal()">
+        <button ng-click="viewAdd.addUser()">
             Crear
         </button>
     </p>

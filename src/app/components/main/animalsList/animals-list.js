@@ -12,8 +12,8 @@
 
     vm.$onInit = function() {
       vm.allAnimals = animalsFactory.getAllAnimals();    
-       vm.User = animalsFactory.getAllUsers();   
-     
+       vm.user = animalsFactory.getUser();   
+      console.log( vm.user);
     };
 
     

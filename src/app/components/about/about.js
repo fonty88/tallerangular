@@ -1,12 +1,12 @@
 (function(angular) {
 
-  angular.module('app').component('viewEdit', {
+  angular.module('app').component('viewAbout', {
     templateUrl:  'app/components/about/about-template.html',
-    controller: ['animalsFactory', viewEdit],
-    controllerAs: 'viewEdit'
+    controller:  viewAbout,
+    controllerAs: 'viewAbout'
   });
 
-  function viewEdit(animalsFactory) {
+  function viewAbout() {
     var vm = this;
 
   }
