@@ -20,7 +20,7 @@
          email: vm.userEmail,
          img: vm.userImg
         };
-        console.log(newUser);
+        //console.log(newUser);
 
         vm.formIsSend = true;    
 

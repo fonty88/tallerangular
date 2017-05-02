@@ -15,5 +15,22 @@
     ng-click="animalsList.goToGame(item.name)"
     >
     </animals-card>
+
+
+ <div  ng-show="animalsList.showMsg">
+ <p>
+     <h3 >
+       Aciertos:  {{animalsList.counta}} 
+        Errores:  {{animalsList.counte}}
+        
+      </h3>
+       </p>
+    <p>
+        <button ng-click="animalsList.goToNew()">
+            Jugar de Nuevo
+        </button>
+    </p> 
+
+    </div>
     
 </article>
