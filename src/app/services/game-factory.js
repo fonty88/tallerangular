@@ -8,10 +8,10 @@
     var self = module;
 
     module.allCards = [
-      { "name": "Card1", "img":"cards.jpg"},
-      { "name": "Card2", "img":"cards.jpg"},
-      { "name": "Card3", "img":"cards.jpg"},
-      { "name": "Card4", "img":"cards.jpg"},    
+       { "name": "Card1", "img":"cart.jpg", "imgn":"garu.jpg"},
+      { "name": "Card2", "img":"cart.jpg", "imgn":"garud.jpg"},
+      { "name": "Card3", "img":"cart.jpg", "imgn":"vee.jpg"},
+      { "name": "Card4", "img":"cart.jpg", "imgn":"grow.jpg"},       
 
     ]; 
 
@@ -21,7 +21,7 @@
 
     module.getAllCards = function() {
       
-     
+        //No estoy seguro que sea una copia profunda, xk cuando cambio una propiedad se cambia en las dos
        self.allCards = self.allCards.concat(self.allCards.slice());
 
       for (let i = self.allCards.length; i; i--) {

@@ -11,7 +11,9 @@
 
     vm.$onInit = function() { 
       vm.showMsg = false;
-      vm.formIsSend = false;     
+      vm.formIsSend = false;  
+
+       
     };
 
     vm.addUser = function() {

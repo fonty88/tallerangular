@@ -15,6 +15,7 @@
 
     vm.goToAdd = function() {
       $state.go('addPlayer');
+      window.location.reload();   // si te sales(hader o footer), al volver a entrar empieces de nuevo
     };
 
   

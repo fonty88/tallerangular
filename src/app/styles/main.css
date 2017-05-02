@@ -51,24 +51,6 @@
     text-align: center;
 }
 
-.miClaseMaravillosa {
-    color: purple;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.miOtraClaseMaravillosa {
-    background: lime;
-}
-
-.mamiferos {
-    border: 3px solid cadetblue;
-}
-
-.aves {
-    border: 3px solid orangered;
-}
-
 .msg-error {
     margin: 1em;
     padding: 1em;
